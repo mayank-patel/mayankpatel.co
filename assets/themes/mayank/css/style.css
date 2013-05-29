@@ -26,6 +26,7 @@
   width: 1160px;
   z-index: 5; }
   .page-header h1 {
+    cursor: pointer;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-left: 150px; }
