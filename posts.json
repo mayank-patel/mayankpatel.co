@@ -1,0 +1,18 @@
+---
+layout: nil
+---
+{
+	"title": "{{ site.title }}",
+	"description": "{{ site.title }} - {{ site.author.name }}",
+	"link": "{{ site.production_url }}{{ site.rss_path }}",
+	"lastBuildDate": "",
+	"posts": [
+		{% for post in site.posts %}
+			{
+				"title": "{{ post.title }}",
+				"url": "{{ site.production_url }}{{ post.url }}",
+				"date": "{{ post.date | date_to_xmlschema }}"
+			}{% if forloop.rindex > 1 %},{% endif %}
+		{% endfor %}
+	]
+}
