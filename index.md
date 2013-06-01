@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Mayank Patel
-
+#title: Mayank Patel
+#description: Hello! I’m a front-end engineer who is passionate about developing rich web applications using HTML5, CSS3 & Javascript.
 ---
 {% include JB/setup %}
 
