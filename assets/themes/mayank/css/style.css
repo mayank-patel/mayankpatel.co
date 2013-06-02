@@ -38,10 +38,11 @@ h3 {
   background-color: black;
   z-index: 5; }
   .page-header h1 {
-    cursor: pointer;
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-left: 150px; }
+    .page-header h1 span {
+      cursor: pointer; }
   .page-header p {
     margin-left: 150px; }
 

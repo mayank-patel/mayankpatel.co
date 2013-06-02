@@ -55,10 +55,13 @@ h3 {
 	z-index: 5;
 
 	h1 {
-		cursor: pointer;
 		letter-spacing: 2px;
 		text-transform: uppercase;
 		margin-left: 150px;
+
+		span {
+			cursor: pointer;
+		}
 	}
 
 	p {
