@@ -59,8 +59,18 @@ h3 {
 		text-transform: uppercase;
 		margin-left: 150px;
 
-		span {
-			cursor: pointer;
+		a{
+			color: $white;
+			text-decoration: none;
+
+			&:active,
+			&:visited{
+				color: $white;
+			}
+
+			&:hover {
+				border-bottom: 1px solid $white;
+			}
 		}
 	}
 

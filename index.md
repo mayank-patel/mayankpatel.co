@@ -18,7 +18,7 @@ layout: default
 		<div class='content'>
 			<p>
 				{{ post.description }}
-			<button onclick="window.location.href='{{ post.url }}'" class="read-more">read more</button>
+			<a href="{{ post.url }}" class="read-more">read more</a>
 			</p>
 		</div>
 	</li>

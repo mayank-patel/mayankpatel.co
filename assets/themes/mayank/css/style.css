@@ -41,8 +41,13 @@ h3 {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-left: 150px; }
-    .page-header h1 span {
-      cursor: pointer; }
+    .page-header h1 a {
+      color: #eee9dc;
+      text-decoration: none; }
+      .page-header h1 a:active, .page-header h1 a:visited {
+        color: #eee9dc; }
+      .page-header h1 a:hover {
+        border-bottom: 1px solid #eee9dc; }
   .page-header p {
     margin-left: 150px; }
 
