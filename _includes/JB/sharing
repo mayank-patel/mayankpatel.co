@@ -1,8 +1,20 @@
-{% if site.safe and site.JB.sharing.provider and page.JB.sharing != false %}
-
-{% case site.JB.sharing.provider %}
-{% when "custom" %}
-  {% include custom/sharing %}
-{% endcase %}
-
+{% if site.JB.sharing.provider and page.sharing != false %}
+  {% if site.JB.sharing.provider contains "like" %}
+     {% include JB/sharing-providers/facebook %}
+  {% endif %}
+  {% if site.JB.sharing.provider contains "tweet" %}
+     {% include JB/sharing-providers/twitter %}
+  {% endif %}
+  {% if site.JB.sharing.provider contains "plusone" %}
+     {% include JB/sharing-providers/googleplus %}
+  {% endif %}
+  {% if site.JB.sharing.provider contains "linkedin" %}
+     {% include JB/sharing-providers/linkedin %}
+  {% endif %}
+  {% if site.JB.sharing.provider contains "hn" %}
+     {% include JB/sharing-providers/hn %}
+  {% endif %}
+  {% if site.JB.sharing.provider contains "all" %}
+     {% include JB/sharing-providers/global %}
+  {% endif %}
 {% endif %}
