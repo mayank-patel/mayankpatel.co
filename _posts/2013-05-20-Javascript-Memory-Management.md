@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Javascript Memory Management"
-description: "Javascript Memory Management myths, issues and tips for Single Page Applications"
+description: "Quick peek in Garbage Collection in Javascript and some common sources of memory leaks"
 categories: [javascript, performance tuning, web development]
 ---
 
