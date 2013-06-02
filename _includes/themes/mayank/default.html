@@ -13,13 +13,20 @@
 </head>
 <body>
 	<header class="page-header">
-		<div class="avatar">
-			<img src="{{ ASSET_PATH }}/images/mayank.jpg">
+		<div class="center-content">
+			<div class="avatar">
+				<img src="{{ ASSET_PATH }}/images/mayank.jpg">
+			</div>
+			<h1 onclick="window.location.href='{{ page.production_url }}'">Mayank Patel</h1>
+			<p>{{ site.description }}</p>
 		</div>
-		<h1 onclick="window.location.href='{{ page.production_url }}'">Mayank Patel</h1>
-		<p>{{ site.description }}</p>
 	</header>
 	{{ content }}
-	<script src="{{ ASSET_PATH }}/js/prism.js" type="text/javascript"></script>
+	<footer class="page-footer">
+		<div class="center-content">
+			<p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+		</div>
+		<script src="{{ ASSET_PATH }}/js/prism.js" type="text/javascript"></script>
+	</footer>
 </body>
 </html>

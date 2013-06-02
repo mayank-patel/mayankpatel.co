@@ -6,24 +6,36 @@
 /* -------------------------------------
  * General Style
  * ------------------------------------- */
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.2em; }
+
 .avatar {
   display: block;
-  float: left; }
+  float: left;
+  margin: 0 10px; }
   .avatar img {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     box-shadow: 0 0 0 4px #eee9dc; }
 
+.center-content {
+  width: 1200px;
+  margin: 0 auto; }
+
 .page-header {
-  display: inline-block;
-  margin-top: 20px;
-  padding-bottom: 20px;
-  box-shadow: 0 1px 1px -1px #eee9dc;
+  padding: 20px 0;
   position: fixed;
   top: 0;
-  background-color: #32a2b8;
-  width: 1160px;
+  left: 0;
+  right: 0;
+  background-color: black;
   z-index: 5; }
   .page-header h1 {
     cursor: pointer;
@@ -35,7 +47,19 @@
 
 .page-content {
   margin: 190px 0 auto;
-  margin-bottom: 0; }
+  margin-bottom: 60px;
+  padding: 0 20px; }
+  .page-content p {
+    text-align: justify; }
+
+.page-footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .page-footer p {
+    text-align: center; }
 
 body {
   max-width: 1200px;
