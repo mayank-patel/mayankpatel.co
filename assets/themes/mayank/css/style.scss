@@ -13,6 +13,7 @@ $bg: #32A2B8;
 $white: #eee9dc;
 $black: #000;
 $red: #f98262;
+$alpha: rgba(255,255,255,0.17);
 
 h1 {
 	font-size: 2em;
@@ -101,16 +102,34 @@ a {
 	bottom: 0;
 	left: 0;
 	right: 0;
-
-	p {
-		text-align: center;
-	}
+	padding: 20px 0;
 }
 
 .post-sharing {
 	padding: 20px 10px;
 	border-bottom: 2px solid #fff;
 	border-bottom-color: rgba(255,255,255,0.17);
+}
+
+.center-c {
+	margin: 0 auto;
+	display: block;
+	width: 330px;
+}
+
+.contact {
+	display: inline-block;
+}
+
+.share-btn {
+	background-color: $black;
+	margin-left: 10px;
+	text-decoration: none;
+	color: $alpha;
+
+	&:hover {
+		color: rgba(255,255,255,.7);
+	}
 }
 
 .comment-box {

@@ -67,14 +67,29 @@ a {
   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0; }
-  .page-footer p {
-    text-align: center; }
+  right: 0;
+  padding: 20px 0; }
 
 .post-sharing {
   padding: 20px 10px;
   border-bottom: 2px solid #fff;
   border-bottom-color: rgba(255, 255, 255, 0.17); }
+
+.center-c {
+  margin: 0 auto;
+  display: block;
+  width: 330px; }
+
+.contact {
+  display: inline-block; }
+
+.share-btn {
+  background-color: black;
+  margin-left: 10px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.17); }
+  .share-btn:hover {
+    color: rgba(255, 255, 255, 0.7); }
 
 .comment-box {
   padding-top: 20px; }
