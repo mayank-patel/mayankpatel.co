@@ -5,8 +5,11 @@
 	</header>
 	<article class="post-content">
 		{{ content }}
+		<footer class="post-sharing">
+			{% include JB/sharing %}
+		</footer>
 	</article>
-	<footer class="post-sharing">
-		{% include JB/sharing %}
+	<footer class="comment-box">
+		{% include JB/comments %}
 	</footer>
 </section>
