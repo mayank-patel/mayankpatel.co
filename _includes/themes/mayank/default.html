@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{{ site.title }}</title>
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% if page.title %}
+		<title>{{ page.title }}</title>
+	{% else %}
+		<title>{{ site.title }}</title>
+	{% endif%}
 	<meta charset="utf-8">
-	<meta name="keywords" content="{% for category in site.categories %}{{category[0]}}{% if forloop.last %}{% else %}, {% endif %}{% endfor %}">
-	<meta name=”description” content="{{ site.description }}">
+	{% if page.keywords %}
+		<meta name="keywords" content="{{ page.keywords | join:', ' }}">
+	{% else %}
+		<meta name="keywords" content="web development, javascript, css, css3, HTML5, performance tuning">
+	{% endif %}
+	{% if page.description %}
+		<meta name=”description” content="{{ page.description }}">
+	{% else %}
+		<meta name=”description” content="{{ site.description }}">
+	{% endif %}
 	<meta name="author" content="{{ site.author.name }}">
 	<link href="{{ ASSET_PATH }}/css/fontcustom.css" rel="stylesheet" type="text/css" media="all">
 	<link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet" type="text/css" media="all">

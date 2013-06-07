@@ -2,7 +2,8 @@
 layout: post
 title: "Javascript Memory Management"
 description: "Quick peek in Garbage Collection in Javascript and some common sources of memory leaks"
-categories: [javascript, performance tuning, web development]
+tags: [javascript, performance tuning, web development]
+keywords: [javascript, performance tuning, web development]
 ---
 
 As the web evolved, the static pages turned into Ajax driven single-page applications. These SPA's enabled web application to have better performance and re-usable code. Memory management is quite important when writing these applications (Eg: Angular JS, Backbone, Ember) as they never get refreshed. This means that memory leaks can become apparent quite quickly, specially when using them on mobile devices which have limited memory.

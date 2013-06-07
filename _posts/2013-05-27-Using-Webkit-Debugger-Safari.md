@@ -2,8 +2,8 @@
 layout: post
 title: "Using webkit developer tools in safari"
 description: "Replace the safari web inspector with the webkit default developer tools"
-category: 
-tags: ["tools", "web-dev"]
+category:
+keywords: ["tools", "web-dev"]
 ---
 
 The Safari Web Inspector is a nightmare for developers. But its no more a pain because its possible to use webkit web inspector in safari. Here are the steps to do that:

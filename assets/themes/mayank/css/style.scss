@@ -32,7 +32,6 @@ a {
 	text-decoration: underline;
 }
 
-
 .avatar {
 	display: block;
 	float: left;
@@ -48,7 +47,7 @@ a {
 }
 
 .center-content {
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -103,6 +102,7 @@ a {
 	left: 0;
 	right: 0;
 	padding: 20px 0;
+	z-index: 2;
 }
 
 .post-sharing {
@@ -150,6 +150,8 @@ body {
 	font-family: 'Noto Sans', sans-serif;
 	color: $white;
 	background: $bg;
+	padding-top: 190px;
+	padding-bottom: 60px;
 }
 
 
@@ -162,8 +164,10 @@ body {
 	list-style: none;
 
 	@if $vertical {
-		margin: 50px 0 30px 120px;
-		margin-top: 240px;
+		//margin: 50px 0 30px 120px;
+		//margin-top: 240px;
+		margin-left: 120px;
+
 		padding-left: 30px;
 		border-left: 8px solid $white;
 	} @else {
@@ -202,7 +206,7 @@ body {
 		right: 0;
 	}
 	font-size: 0.95em;
-	line-height: 20px;
+	line-height: 1.25em;
 	position: absolute;
 }
 .circle {
@@ -365,3 +369,6 @@ label {
 		}
 	}
 }
+
+
+@import "mobile";
