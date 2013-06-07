@@ -233,6 +233,8 @@ label {
 
   .page-content {
     margin-top: 0; }
+    .page-content pre {
+      overflow-y: scroll; }
 
   .page-footer {
     padding: 10px 0; } }
