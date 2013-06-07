@@ -213,8 +213,7 @@ label {
 @media (max-width: 600px) {
   body {
     font-size: 90%;
-    padding-top: 60px;
-    padding-bottom: 40px; }
+    padding: 60px 0 40px 0; }
 
   .page-header {
     padding: 0; }
@@ -231,6 +230,9 @@ label {
     .avatar img {
       width: 60px;
       height: 60px; }
+
+  .page-content {
+    margin-top: 0; }
 
   .page-footer {
     padding: 10px 0; } }

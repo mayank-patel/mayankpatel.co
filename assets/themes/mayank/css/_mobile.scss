@@ -2,8 +2,7 @@
 
 	body {
 		font-size: 90%;
-		padding-top: 60px;
-		padding-bottom: 40px;
+		padding: 60px 0 40px 0;
 	}
 
 	.page-header {
@@ -29,6 +28,10 @@
 			height: 60px;
 		}
 		margin: 10px 10px;
+	}
+
+	.page-content {
+		margin-top: 0;
 	}
 
 	.page-footer {
