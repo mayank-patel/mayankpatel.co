@@ -17,7 +17,10 @@ Like many other advanced programming languages, javascript also has a Garbage Co
 
 ### Reference Counting
 
-When an object is created, Javascript automatically allocates an appropriate amount of memory for that object. The object is continuously evaluated by the garbage collector to see if is still used. The garbage collector runs at regular interval, it sweeps through the object graph and counts the number of other objects that references each object. Later the objects with reference count 0 are considered as not unused and object's memory can be reclaimed.
+
+When an object is created, Javascript automatically allocates an appropriate amount of memory for that object. It has a reference count of 1. When ever the object is assigned to a new variable then the reference count is incremented and when ever the reference is assigned a new object or is out of scope the reference count is decremented by 1. The object's having reference count zero are the ones which are not having any references and are considered non reachable. When the garbage collection starts the memory is reclaimed from objects with zero reference count.
+
+ This algorithm fails when there are islands of isolation or cyclic dependencies. That is Object A referring Object B and Object B referring Object A. When both of them are out of scope the reference count of both is 1, hence causing memory leak.
 
 ### Mark and Sweep Collection
 
